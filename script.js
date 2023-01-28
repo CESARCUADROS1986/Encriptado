@@ -53,12 +53,3 @@ function desencriptar(stringDesencriptada){
     return stringDesencriptada
 }
 
-function copy() {
-
-    var content = document.getElementById(Mensaje.value);
-    
-    content.select();
-    document.execCommand('copy');
-
-    alert("Copiado!");
-}
