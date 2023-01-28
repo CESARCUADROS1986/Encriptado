@@ -21,8 +21,11 @@ function btnDesencriptar(){
     textArea.value = "";
 }
 
-function btnCopiar(){
-   copy();
+function copiarTexto(){
+    var texto = Mensaje.value;
+    navigator.clipboard.writeText(texto);
+    Mensaje.style.backgroundImage = "none"
+    Mensaje.value = "Texto Copiado";
 }
 
 
